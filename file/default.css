@@ -84,3 +84,35 @@ a {
   font-family: monospace;
 
 }
+/* --- Responsive Fix --- */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+canvas {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100%;
+  display: block;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Tablet screens */
+@media (max-width: 768px) {
+  h1 { font-size: 1.8rem; }
+  p { font-size: 1rem; }
+  button { font-size: 1rem; padding: 8px 12px; }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  h1 { font-size: 1.5rem; text-align: center; }
+  p { font-size: 0.9rem; text-align: center; }
+  button { font-size: 0.9rem; padding: 6px 10px; display: block; margin: 10px auto; }
+}
